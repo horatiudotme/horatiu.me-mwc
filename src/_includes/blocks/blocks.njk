@@ -1,0 +1,15 @@
+{% macro workListItem(work) %}
+  <mwc-list-item twoline="twoline">
+    <span>{{ work.name }}</span>
+    <span slot="secondary">{{ work.role }}</span>
+  </mwc-list-item>
+{% endmacro %}
+
+{% macro workList(heading, works) %}
+  <h3 class="hme-list__heading">{{ heading }}</h3>
+  <mwc-list>
+    {% for work in works -%}
+      {{ workListItem(work) }}
+    {%- endfor %}
+  </mwc-list>
+{% endmacro %}

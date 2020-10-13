@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ seoTitle }}</title>
+    <meta name="description" content="{{ seoDescription }}">
+
+    <!-- Load the Roboto and Material Icons fonts. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+
+    <mwc-top-app-bar-fixed centertitle="centerTitle">
+      <mwc-icon-button icon="menu" slot="navigationIcon"></mwc-icon-button>
+      <div slot="title">Horațiu Tănescu</div>
+      <mwc-icon-button icon="favorite" slot="actionItems"></mwc-icon-button>
+      <div>
+        <!-- content -->
+      </div>
+    </mwc-top-app-bar-fixed>
+
+    {{ content | safe }}
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

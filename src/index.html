@@ -1,0 +1,27 @@
+---
+seoTitle: Horațiu Tănescu
+---
+
+{% from "blocks/blocks.njk" import workList with context %}
+
+<section>
+  <h2 class="mdc-typography--headline6">Some of my works</h2>
+  {{ workList("Companies", works.companies) }}
+  {{ workList("Organizations", works.organizations) }}
+  {{ workList("Products", works.products) }}
+  {{ workList("Apps", works.apps) }}
+</section>
+
+<section>
+  <h2 class="mdc-typography--headline6">My works and I have been featured on</h2>
+  <mwc-list>
+    {% for feature in features.features -%}
+      <mwc-list-item twoline="twoline">
+        <span>{{ feature.title }}</span>
+        <span slot="secondary">{{ feature.country }}</span>
+      </mwc-list-item>
+    {%- endfor %}
+  </mwc-list>
+
+</section>
+

@@ -1,0 +1,30 @@
+{
+  "name": "horatiu.me-mwc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "npm-run-all --parallel dev:*",
+    "dev:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "dev:parcel": "parcel watch src/_assets/images/* src/_assets/css/main.css src/_assets/js/main.js --dist-dir _site_dev/assets",
+    "build": "run-s prod:*",
+    "prod:eleventy": "cross-env ELEVENTY_ENV=production eleventy --output=./_site_prod",
+    "prod:parcel": "parcel build src/_assets/images/* src/_assets/css/main.css src/_assets/js/main.js --dist-dir _site_prod/assets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "cross-env": "^7.0.2",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-beta.1"
+  },
+  "dependencies": {
+    "@material/mwc-button": "^0.19.1",
+    "@material/mwc-icon-button": "^0.19.1",
+    "@material/mwc-list": "^0.19.1",
+    "@material/mwc-top-app-bar-fixed": "^0.19.1",
+    "js-yaml": "^3.14.0"
+  }
+}

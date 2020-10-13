@@ -1,0 +1,15 @@
+- name: Rotary Club 1113 Oradea
+  role: cofounder
+  url:  https://rotary1113.ro
+
+- name: Rotaract Club Oradea
+  role: cofounder/past president
+  url:  https://www.facebook.com/rotaractoradea/
+
+- name: TEDx
+  role: speaker
+  url:  https://www.ted.com/about/programs-initiatives/tedx-program
+
+- name: iXperiment
+  role: speaker
+  url:  http://ixperiment.ro

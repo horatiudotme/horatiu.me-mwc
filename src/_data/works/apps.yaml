@@ -1,0 +1,55 @@
+- name: Add/Remove Plus!
+  role: creator & developer
+  url:  https://web.archive.org/web/20041011051204/http://www.aurelitec.com/software/arplus/
+
+- name: CinemaDrape
+  role: creator & developer
+  url:  https://www.aurelitec.com/cinemadrape/
+
+- name: Colortypist
+  role: creator & developer
+  url:  https://www.aurelitec.com/colortypist/
+
+- name: ColorVeil
+  role: creator & developer
+  url:  https://www.aurelitec.com/colorveil/
+
+- name: FrameDummy
+  role: creator & developer
+  url:  https://www.appgramming.com/framedummy/
+
+- name: HTMtied
+  role: creator & developer
+  url:  https://www.aurelitec.com/htmtied/
+
+- name: InjuredPixels
+  role: creator & developer
+  url:  https://www.aurelitec.com/injuredpixels/
+
+- name: ISeePass
+  role: creator & developer
+  url:  https://www.tecdrop.com/iseepass/
+
+- name: LoneColor
+  role: creator & developer
+  url:  https://www.appgramming.com/lonecolor/
+
+- name: Pitch Black Wallpaper
+  role: creator & developer
+  url:  https://www.tecdrop.com/pitchblackwallpaper/
+
+- name: PixelHealer
+  role: creator & developer
+  url:  https://www.aurelitec.com/pixelhealer/
+
+- name: RGB Color Wallpaper
+  role: creator & developer
+  url:  http://www.tecdrop.com/rgbcolorwallpaper/
+
+- name: Thumbico
+  role: creator & developer
+  url:  http://www.aurelitec.com/thumbico/
+
+- name: Whats On My Computer
+  role: creator & developer
+  url:  https://web.archive.org/web/20040622013006/http://www.whatsonmycomputer.com/
