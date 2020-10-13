@@ -6,7 +6,7 @@
 {% endmacro %}
 
 {% macro workList(heading, works) %}
-  <h3 class="hme-list__heading">{{ heading }}</h3>
+  <h3 class="mdc-typography--subtitle2 hme-list-aligned hme-list__heading">{{ heading }}</h3>
   <mwc-list>
     {% for work in works -%}
       {{ workListItem(work) }}

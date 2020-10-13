@@ -20,10 +20,18 @@
       <mwc-icon-button icon="favorite" slot="actionItems"></mwc-icon-button>
       <div>
         <!-- content -->
+        <mwc-tab-bar>
+          <mwc-tab label="Intro"></mwc-tab>
+          <mwc-tab label="Works"></mwc-tab>
+          <mwc-tab label="Features"></mwc-tab>
+        </mwc-tab-bar>
       </div>
+  
+      <div class="hme-content-wrapper">
+        {{ content | safe }}
+      </div>
+  
     </mwc-top-app-bar-fixed>
-
-    {{ content | safe }}
 
     <script src="/assets/js/main.js"></script>
   </body>

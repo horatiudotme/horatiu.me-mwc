@@ -1,0 +1,48 @@
+@import url(https://unpkg.com/@material/typography@5.1.0/dist/mdc.typography.css);
+
+// @use "@material/typography/mdc-typography";
+
+html {
+  --mdc-theme-primary: black;
+  --mdc-typography-font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.hme-list-aligned {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hme-list__heading {
+  margin-bottom: 0;
+}
+
+.hme-intro {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+
+mwc-tab-bar {
+  --mdc-theme-primary: white;
+  --mdc-text-transform: none;
+  --mdc-tab-color-default: white;
+  --mdc-tab-text-label-color-default: white;
+  // --mdc-tab-stacked-height: 100px;
+  background-color: black;
+}
+
+.hme-content-wrapper {
+  margin: 0 auto;
+  max-width: 450px;
+}
