@@ -2,31 +2,44 @@
 seoTitle: Horațiu Tănescu
 ---
 
-{% from "blocks/blocks.njk" import workList with context %}
+{% from "blocks/blocks.njk" import buildWorkList, buildFeaturesList with context %}
 
+<!-- Tab bar -->
+<mwc-tab-bar id="main-tab-bar">
+  <mwc-tab label="Intro"></mwc-tab>
+  <mwc-tab label="Works"></mwc-tab>
+  <mwc-tab label="Features"></mwc-tab>
+</mwc-tab-bar>
+
+<main class="hme-content-wrapper">
+
+<!-- Intro tab section -->
 <section class="hme-list-aligned hme-intro hme-tab-bar-view">
   <h1 class="mdc-typography--headline5">Hello, World!</h1>
   <h2 class="mdc-typography--headline5">I am Horațiu (Aurelian) Tănescu, and I create Hello World programs</h2>
   <p class="mdc-typography--headline5">I also create software products, apps, sites, poems, and real and virtual software companies</p>
 </section>
 
-<section hidden class="hme-tab-bar-view">
+<!-- Works tab section -->
+<section class="hme-tab-bar-view">
   <h2 class="mdc-typography--subtitle1 hme-tab-bar-view__title hme-list-aligned">Some of my works</h2>
-  {{ workList("Companies", works.companies) }}
-  {{ workList("Organizations", works.organizations) }}
-  {{ workList("Products", works.products) }}
-  {{ workList("Apps", works.apps) }}
+  
+  <h3 class="mdc-typography--subtitle2 hme-list-aligned hme-list__heading">Companies</h3>
+  {{ buildWorkList(works.companies) }}
+  <h3 class="mdc-typography--subtitle2 hme-list-aligned hme-list__heading">Organizations</h3>
+  {{ buildWorkList(works.organizations) }}
+  <h3 class="mdc-typography--subtitle2 hme-list-aligned hme-list__heading">Products</h3>
+  {{ buildWorkList(works.products) }}
+  <h3 class="mdc-typography--subtitle2 hme-list-aligned hme-list__heading">Apps</h3>
+  {{ buildWorkList(works.apps) }}
 </section>
 
-<section hidden class="hme-tab-bar-view">
+<!-- Features tab section -->
+<section class="hme-tab-bar-view">
   <h2 class="mdc-typography--subtitle1 hme-tab-bar-view__title hme-list-aligned">My works and I have been featured on</h2>
-  <mwc-list>
-    {% for feature in features.features -%}
-    <mwc-list-item twoline="twoline">
-      <span>{{ feature.title }}</span>
-      <span slot="secondary">{{ feature.country }}</span>
-    </mwc-list-item>
-    {%- endfor %}
-  </mwc-list>
-
+  {{ buildFeaturesList(features.fav) }}
+  <h2 class="mdc-typography--subtitle1 hme-tab-bar-view__title hme-list-aligned">And more</h2>
+  {{ buildFeaturesList(features.more) }}
 </section>
+
+</main>

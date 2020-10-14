@@ -1,15 +1,24 @@
-{% macro workListItem(work) %}
-  <mwc-list-item twoline="twoline">
-    <span>{{ work.name }}</span>
-    <span slot="secondary">{{ work.role }}</span>
-  </mwc-list-item>
+{% macro buildListItem(primary, secondary, url) %}
+  <a href="{{ url }}" target="_blank">
+    <mwc-list-item twoline="twoline">
+      <span>{{ primary }}</span>
+      <span slot="secondary">{{ secondary }}</span>
+    </mwc-list-item>
+  </a>
 {% endmacro %}
 
-{% macro workList(heading, works) %}
-  <h3 class="mdc-typography--subtitle2 hme-list-aligned hme-list__heading">{{ heading }}</h3>
+{% macro buildWorkList(data) %}
   <mwc-list>
-    {% for work in works -%}
-      {{ workListItem(work) }}
+    {% for item in data -%}
+      {{ buildListItem(item.name, item.role, item.url) }}
+    {%- endfor %}
+  </mwc-list>
+{% endmacro %}
+
+{% macro buildFeaturesList(data) %}
+  <mwc-list>
+    {% for item in data -%}
+      {{ buildListItem(item.name, item.country, item.url) }}
     {%- endfor %}
   </mwc-list>
 {% endmacro %}
