@@ -1,0 +1,63 @@
+@import url(https://unpkg.com/@material/typography@7.0.0/dist/mdc.typography.css);
+
+html {
+  --mdc-theme-primary: black;
+  --mdc-typography-font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.hme-list-aligned {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hme-list__heading {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 0;
+}
+
+.hme-intro {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+
+mwc-tab-bar {
+  --mdc-theme-primary: white;
+
+  --mdc-text-transform: none;
+  --mdc-typography-button-text-transform: none;
+
+  --mdc-tab-text-label-color-default: rgba(255, 255, 255, 0.7);
+  background-color: black;
+}
+
+.hme-content-wrapper {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.hme-tab-section {
+  padding-top: 2rem;
+}
+
+.hme-tab-section__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 1rem 0;
+}
+
+.hme-tab-section__title + .hme-list__heading {
+  margin-top: 2.5rem;
+}
