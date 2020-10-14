@@ -7,9 +7,6 @@ import '@material/mwc-tab';
 import '@material/mwc-list';
 import '@material/mwc-list/mwc-list-item';
 
-
-import '@material/mwc-button';
-
 const tabBarViews = document.querySelectorAll('.hme-tab-section');
 
 const mainTabBar = document.getElementById('main-tab-bar');
