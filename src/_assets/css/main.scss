@@ -1,4 +1,4 @@
-@import url(https://unpkg.com/@material/typography@5.1.0/dist/mdc.typography.css);
+@import url(https://unpkg.com/@material/typography@7.0.0/dist/mdc.typography.css);
 
 // @use "@material/typography/mdc-typography";
 
@@ -35,14 +35,23 @@ a {
 
 mwc-tab-bar {
   --mdc-theme-primary: white;
+
   --mdc-text-transform: none;
-  --mdc-tab-color-default: white;
-  --mdc-tab-text-label-color-default: white;
-  // --mdc-tab-stacked-height: 100px;
+  --mdc-typography-button-text-transform: none;
+
+  --mdc-tab-text-label-color-default: rgba(255, 255, 255, 0.7);
   background-color: black;
 }
 
 .hme-content-wrapper {
   margin: 0 auto;
   max-width: 450px;
+}
+
+.hme-tab-bar-view {
+  padding-top: 2rem;
+}
+
+.hme-tab-bar-view__title {
+  font-weight: 500;
 }

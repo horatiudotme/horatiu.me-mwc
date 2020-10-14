@@ -4,30 +4,29 @@ seoTitle: Horațiu Tănescu
 
 {% from "blocks/blocks.njk" import workList with context %}
 
-<section class="hme-list-aligned hme-intro">
+<section class="hme-list-aligned hme-intro hme-tab-bar-view">
   <h1 class="mdc-typography--headline5">Hello, World!</h1>
   <h2 class="mdc-typography--headline5">I am Horațiu (Aurelian) Tănescu, and I create Hello World programs</h2>
   <p class="mdc-typography--headline5">I also create software products, apps, sites, poems, and real and virtual software companies</p>
 </section>
 
-<section>
-  <h2 class="mdc-typography--headline6 hme-list-aligned">Some of my works</h2>
+<section hidden class="hme-tab-bar-view">
+  <h2 class="mdc-typography--subtitle1 hme-tab-bar-view__title hme-list-aligned">Some of my works</h2>
   {{ workList("Companies", works.companies) }}
   {{ workList("Organizations", works.organizations) }}
   {{ workList("Products", works.products) }}
   {{ workList("Apps", works.apps) }}
 </section>
 
-<section>
-  <h2 class="mdc-typography--headline6 hme-list-aligned">My works and I have been featured on</h2>
+<section hidden class="hme-tab-bar-view">
+  <h2 class="mdc-typography--subtitle1 hme-tab-bar-view__title hme-list-aligned">My works and I have been featured on</h2>
   <mwc-list>
     {% for feature in features.features -%}
-      <mwc-list-item twoline="twoline">
-        <span>{{ feature.title }}</span>
-        <span slot="secondary">{{ feature.country }}</span>
-      </mwc-list-item>
+    <mwc-list-item twoline="twoline">
+      <span>{{ feature.title }}</span>
+      <span slot="secondary">{{ feature.country }}</span>
+    </mwc-list-item>
     {%- endfor %}
   </mwc-list>
 
 </section>
-
