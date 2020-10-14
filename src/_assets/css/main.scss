@@ -1,4 +1,9 @@
-@import url(https://unpkg.com/@material/typography@7.0.0/dist/mdc.typography.css);
+// @import url(https://unpkg.com/@material/typography@7.0.0/dist/mdc.typography.css);
+// @use "https://unpkg.com/@material/typography@7.0.0/dist/mdc.typography.css";
+// @use "test.scss";
+@use "@material/typography/mdc-typography";
+
+// @use "./node_modules/@material/typography/mdc-typography.scss";
 
 // @use "@material/typography/mdc-typography";
 
@@ -23,6 +28,8 @@ a {
 }
 
 .hme-list__heading {
+  @extend .mdc-typography--subtitle2;
+  @extend .hme-list-aligned;
   margin-bottom: 0;
 }
 
@@ -48,10 +55,19 @@ mwc-tab-bar {
   max-width: 450px;
 }
 
-.hme-tab-bar-view {
+.hme-tab-section {
   padding-top: 2rem;
 }
 
-.hme-tab-bar-view__title {
-  font-weight: 500;
+.hme-tab-section__title {
+  // @extend .mdc-typography--subtitle1;
+  @extend .mdc-typography--headline6;
+  @extend .hme-list-aligned;
+  margin: 1rem 0;
+  // margin-bottom: 2rem;
+  // font-weight: 500;
+}
+
+.hme-tab-section__title + .hme-list__heading {
+  margin-top: 2.5rem;
 }
