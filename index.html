@@ -20,7 +20,7 @@
       <mwc-icon-button icon="favorite" slot="actionItems"></mwc-icon-button>
       <div>
         <!-- content -->
-        <mwc-tab-bar>
+        <mwc-tab-bar id="main-tab-bar">
           <mwc-tab label="Intro"></mwc-tab>
           <mwc-tab label="Works"></mwc-tab>
           <mwc-tab label="Features"></mwc-tab>
@@ -31,14 +31,14 @@
         
 
 
-<section class="hme-list-aligned hme-intro">
+<section class="hme-list-aligned hme-intro hme-tab-bar-view">
   <h1 class="mdc-typography--headline5">Hello, World!</h1>
   <h2 class="mdc-typography--headline5">I am Horațiu (Aurelian) Tănescu, and I create Hello World programs</h2>
   <p class="mdc-typography--headline5">I also create software products, apps, sites, poems, and real and virtual software companies</p>
 </section>
 
-<section>
-  <h2 class="mdc-typography--headline6 hme-list-aligned">Some of my works</h2>
+<section hidden class="hme-tab-bar-view">
+  <h2 class="mdc-typography--subtitle1 hme-tab-bar-view__title hme-list-aligned">Some of my works</h2>
   
   <h3 class="mdc-typography--subtitle2 hme-list-aligned hme-list__heading">Companies</h3>
   <mwc-list>
@@ -210,213 +210,211 @@
 
 </section>
 
-<section>
-  <h2 class="mdc-typography--headline6 hme-list-aligned">My works and I have been featured on</h2>
+<section hidden class="hme-tab-bar-view">
+  <h2 class="mdc-typography--subtitle1 hme-tab-bar-view__title hme-list-aligned">My works and I have been featured on</h2>
   <mwc-list>
     <mwc-list-item twoline="twoline">
-        <span>About.com</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>AddictiveTips</span>
-        <span slot="secondary">Pakistan</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Adevărul</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Baidu Encyclopedia</span>
-        <span slot="secondary">China</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Baixaki</span>
-        <span slot="secondary">Brazil</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>BetaNews</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>BIHON</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>CHIP</span>
-        <span slot="secondary">Russia</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>CNET</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>CNN</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Computer Hoy</span>
-        <span slot="secondary">Spain</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>College Info Geek</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Computer Idea</span>
-        <span slot="secondary">Italy</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Computerworld</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Crişana</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Digi24</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Digital Trends</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Download Squad</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>EL ESPAÑOL</span>
-        <span slot="secondary">Spain</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Entrepreneur</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>EMAZING</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Fastweb Digital Magazine</span>
-        <span slot="secondary">Italy</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Federal University of Minas Gerais</span>
-        <span slot="secondary">Brazil</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>GenK</span>
-        <span slot="secondary">Vietnam</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Globedia</span>
-        <span slot="secondary">Spain</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Hobby Consolas</span>
-        <span slot="secondary">Spain</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Kim Komando</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Komputer Świat</span>
-        <span slot="secondary">Poland</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Libero 24x7</span>
-        <span slot="secondary">Italy</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Lifehacker</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>LO4D</span>
-        <span slot="secondary">Canada</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>MajorGeeks</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Notizie.it</span>
-        <span slot="secondary">Italy</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>PC Open</span>
-        <span slot="secondary">Italy</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>PC-WELT</span>
-        <span slot="secondary">Germany</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>PCGuia</span>
-        <span slot="secondary">Portugal</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>PCPlus</span>
-        <span slot="secondary">United Kingdom</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>PCSPACE</span>
-        <span slot="secondary">Slovakia</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Revision3</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Revista Do CD-ROM</span>
-        <span slot="secondary">Brazil</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Sarasota PC Monitor</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Simtel</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Smart Computing</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Softpedia</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>SoftZone</span>
-        <span slot="secondary">Spain</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Software Informer</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Techbang</span>
-        <span slot="secondary">Taiwan</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Technology Personalized</span>
-        <span slot="secondary">India</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>TekCrispy</span>
-        <span slot="secondary">Nicaragua</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>The Australian Financial Review</span>
-        <span slot="secondary">Australia</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>The Columbia Daily Tribune</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>The Tribune India</span>
-        <span slot="secondary">India</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Tiscali Magazine</span>
-        <span slot="secondary">Italy</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Times Computing</span>
-        <span slot="secondary">India</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Tirto.id</span>
-        <span slot="secondary">Indonesia</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Vector Magazine</span>
-        <span slot="secondary">Japan</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Vnunet</span>
-        <span slot="secondary">United Kingdom</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Web User Magazine</span>
-        <span slot="secondary">United Kingdom</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Windows Report</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Xataka Android</span>
-        <span slot="secondary">Spain</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Yahoo Finance</span>
-        <span slot="secondary">United States</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>YourLifeUpdated</span>
-        <span slot="secondary">Italy</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Ziarul Curentul</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Ziarul de Iaşi</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Ziarul Financiar</span>
-        <span slot="secondary">Romania</span>
-      </mwc-list-item><mwc-list-item twoline="twoline">
-        <span>Živé.sk</span>
-        <span slot="secondary">Slovakia</span>
-      </mwc-list-item>
+      <span>About.com</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>AddictiveTips</span>
+      <span slot="secondary">Pakistan</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Adevărul</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Baidu Encyclopedia</span>
+      <span slot="secondary">China</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Baixaki</span>
+      <span slot="secondary">Brazil</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>BetaNews</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>BIHON</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>CHIP</span>
+      <span slot="secondary">Russia</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>CNET</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>CNN</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Computer Hoy</span>
+      <span slot="secondary">Spain</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>College Info Geek</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Computer Idea</span>
+      <span slot="secondary">Italy</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Computerworld</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Crişana</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Digi24</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Digital Trends</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Download Squad</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>EL ESPAÑOL</span>
+      <span slot="secondary">Spain</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Entrepreneur</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>EMAZING</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Fastweb Digital Magazine</span>
+      <span slot="secondary">Italy</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Federal University of Minas Gerais</span>
+      <span slot="secondary">Brazil</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>GenK</span>
+      <span slot="secondary">Vietnam</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Globedia</span>
+      <span slot="secondary">Spain</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Hobby Consolas</span>
+      <span slot="secondary">Spain</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Kim Komando</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Komputer Świat</span>
+      <span slot="secondary">Poland</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Libero 24x7</span>
+      <span slot="secondary">Italy</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Lifehacker</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>LO4D</span>
+      <span slot="secondary">Canada</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>MajorGeeks</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Notizie.it</span>
+      <span slot="secondary">Italy</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>PC Open</span>
+      <span slot="secondary">Italy</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>PC-WELT</span>
+      <span slot="secondary">Germany</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>PCGuia</span>
+      <span slot="secondary">Portugal</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>PCPlus</span>
+      <span slot="secondary">United Kingdom</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>PCSPACE</span>
+      <span slot="secondary">Slovakia</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Revision3</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Revista Do CD-ROM</span>
+      <span slot="secondary">Brazil</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Sarasota PC Monitor</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Simtel</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Smart Computing</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Softpedia</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>SoftZone</span>
+      <span slot="secondary">Spain</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Software Informer</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Techbang</span>
+      <span slot="secondary">Taiwan</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Technology Personalized</span>
+      <span slot="secondary">India</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>TekCrispy</span>
+      <span slot="secondary">Nicaragua</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>The Australian Financial Review</span>
+      <span slot="secondary">Australia</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>The Columbia Daily Tribune</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>The Tribune India</span>
+      <span slot="secondary">India</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Tiscali Magazine</span>
+      <span slot="secondary">Italy</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Times Computing</span>
+      <span slot="secondary">India</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Tirto.id</span>
+      <span slot="secondary">Indonesia</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Vector Magazine</span>
+      <span slot="secondary">Japan</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Vnunet</span>
+      <span slot="secondary">United Kingdom</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Web User Magazine</span>
+      <span slot="secondary">United Kingdom</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Windows Report</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Xataka Android</span>
+      <span slot="secondary">Spain</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Yahoo Finance</span>
+      <span slot="secondary">United States</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>YourLifeUpdated</span>
+      <span slot="secondary">Italy</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Ziarul Curentul</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Ziarul de Iaşi</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Ziarul Financiar</span>
+      <span slot="secondary">Romania</span>
+    </mwc-list-item><mwc-list-item twoline="twoline">
+      <span>Živé.sk</span>
+      <span slot="secondary">Slovakia</span>
+    </mwc-list-item>
   </mwc-list>
 
 </section>
-
-
       </div>
   
     </mwc-top-app-bar-fixed>
