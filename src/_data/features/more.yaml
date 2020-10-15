@@ -1,19 +1,77 @@
+- name: Blogsdna
+  url: https://web.archive.org/web/20170615162116/http://www.blogsdna.com/25606/reveal-saved-passwords-from-under-asterisks-in-your-web-browser-with-one-click.htm
+  country: India
+  app: ISeePass
+
+- name: BytesIn
+  url: https://www.bytesin.com/cinemadrape-apply-a-virtual-drape-on-the-screen-to-avoid-distractions/
+  country: Romania
+  app: CinemaDrape
+
+- name: Computertaal
+  url: https://computertaal.info/2013/05/12/beste-freeware-cinemadrape/
+  country: Belgium
+  app: CinemaDrape
+
+- name: Download3K
+  url: https://www.download3k.com/Desktop-Enhancements/Themes-wallpapers/Download-Pitch-Black-Wallpaper.html
+  country: Romania
+  app: Pitch Black Wallpaper
+
+- name: Freewaregenius
+  url: http://www.freewaregenius.com/create-internet-bookmarks-as-browser-independent-files-on-your-desktop-with-htmtied/
+  country: Jordan
+  app: HTMtied
+  alexa: 1,481,993 (2020-10-15)
+
+- name: I Love Free Software
+  url: https://www.ilovefreesoftware.com/30/windows/desktop-enhancement/set-desktop-background-to-solid-color-with-lonecolor.html
+  country: India
+  app: LoneColor
+
 - name: LO4D
   url: https://cinemadrape.en.lo4d.com/windows
   country: Canada
+  app: CinemaDrape
 
 - name: MajorGeeks
   url: https://www.majorgeeks.com/files/details/cinemadrape.html
   country: United States
+  app: CinemaDrape
+
+- name: MOONGIFT
+  url: https://www.moongift.jp/2010/02/cinemadrape/
+  country: Japan
+  app: CinemaDrape
+
+- name: Rocky Bytes
+  url: https://www.rockybytes.com/cinemadrape
+  country: Spain
+  app: CinemaDrape
 
 - name: Sarasota PC Monitor
   url: https://web.archive.org/web/20040616105551/http://spcug.org/reviews/hg0202.htm
   country: United States
+  app: Add/Remove Plus
 
 - name: Softpedia
   url: https://mobile.softpedia.com/android/LoneColor-Android-Review-1485.html
   country: Romania
+  app: LoneColor
+
+- name: NirmalTV.COM
+  url: https://www.nirmaltv.com/2009/12/21/how-to-check-for-dead-pixels-on-lcd-monitors/
+  country: India
+  app: InjuredPixels
+  TODO: find a better link
 
 - name: YourLifeUpdated
   url: https://www.yourlifeupdated.net/guide/come-riparare-i-pixel-bruciati-su-qualsiasi-display/
   country: Italy
+  app: PixelHealer
+
+- name: Zigg
+  url: https://www.zigg.com.br/downloads/colortypist
+  country: Brazil
+  app: Colortypist
+
